@@ -1,0 +1,29 @@
+@use "../../../master.scss";
+
+.video-modal {
+    width: 80% !important;
+
+    .ant-modal-content {
+        padding: 0 !important;
+        background: none;
+        box-shadow: none;
+        // background-color: master.$dark-color;
+        .ant-modal-header {
+            // background-color: master.$dark-color;
+            .ant-modal-title {
+            }
+        }
+        .ant-modal-close {
+            background-color: master.$theme-color;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            .ant-modal-close-x {
+                color: master.$grey-color;
+                // font-size: 10px;
+            }
+        }
+        .ant-modal-body {
+        }
+    }
+}

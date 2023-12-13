@@ -1,0 +1,42 @@
+@use "../../../master.scss";
+
+.common-password {
+    // background: #363941;
+    height: 40px;
+    // border-color: master.$dark-color;
+
+    input {
+        // background: #363941;
+        // color: #ffffff;
+        font-size: 14px;
+
+        &::placeholder {
+            color: #484848;
+            opacity: 0.5;
+        }
+    }
+    .ant-input-suffix {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .common-password {
+        height: 35px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .common-password {
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .common-password {
+        font-size: 14px;
+        height: 45px;
+    }
+}

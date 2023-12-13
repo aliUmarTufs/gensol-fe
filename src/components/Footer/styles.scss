@@ -1,0 +1,24 @@
+@use "../../master.scss";
+
+.web-footer {
+  .background {
+    margin-top: 100px;
+    padding-bottom: 30px;
+    padding-top: 120px;
+    background-image: url("../../assets/footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include master.common-padding(70px);
+
+    @media (max-width: 1087px) {
+      background-position: center;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

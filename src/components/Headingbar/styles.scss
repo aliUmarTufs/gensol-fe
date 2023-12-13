@@ -1,0 +1,10 @@
+@use "../../master.scss";
+
+.headingBar-parent {
+    background-color: master.$themeLight-color;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}

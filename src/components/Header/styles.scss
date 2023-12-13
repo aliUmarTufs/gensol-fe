@@ -1,0 +1,41 @@
+@use "../../master.scss";
+
+.main-header {
+
+
+  .top-bar {
+    background-color: #000000;
+    height: 51px;
+  }
+  .header-content {
+    @include master.common-padding(70px);
+    background-color: #fcfdff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .divider {
+      width: 20px;
+      transform: rotate(90deg);
+      border: 1px solid #000000;
+    }
+    .menu{
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
+
+    }
+    .hamburgerIconWrapper{
+      display: none;
+
+      @media (max-width: 1200px) {
+        display: flex;
+        .container {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}

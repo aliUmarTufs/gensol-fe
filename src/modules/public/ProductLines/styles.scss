@@ -1,0 +1,215 @@
+@use '../../../master.scss';
+
+.productLinesWrapper {
+  background-color: #343434;
+  padding: 20px 0;
+  margin-top: 100px;
+
+  .bottomBorder {
+    border-top: 1px solid rgba(189, 189, 189, 0.2);
+    padding-top: 10px;
+  }
+  .topBorder {
+    border-top: 1px solid rgba(189, 189, 189, 0.2);
+    padding-top: 10px;
+  }
+  .subscriptionItem {
+    margin-bottom: 10px;
+  }
+  .subproduct-container {
+    @include master.common-padding(70px);
+
+    .paraText {
+      margin: 20px 0 !important;
+    }
+    .prodlineMenu {
+      background-color: rgba(72, 72, 72, 1);
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .menuHeading {
+        cursor: pointer !important;
+
+        font-size: xx-large;
+        border-radius: 10px;
+        padding: 15px 25px !important;
+        background-color: transparent;
+
+        line-height: normal;
+      }
+      .menuHeadingActive {
+        transition: all 0.2s;
+        background-color: #343434;
+      }
+    }
+    .prodlineCards {
+      background-color: rgba(72, 72, 72, 1);
+      border-radius: 20px;
+      padding: 10px;
+      .prodlineCardWrapper {
+        border-radius: 10px;
+        padding: 15px 10px;
+        background-color: master.$light-grey-color;
+        height: 500px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .subscrip_headpackage {
+          border-radius: 10px;
+
+          padding: 15px 10px;
+        }
+
+        .subscrip_package {
+          padding: 15px 10px;
+          border-radius: 0px 0px 10px 10px;
+
+          background-color: #fff;
+
+          ul {
+            margin: 0 10px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .packagewrappper {
+          padding-top: 10px;
+          min-height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .subscriptionLastItem {
+            // margin-bottom: 10px;
+          }
+        }
+
+        .customPackage {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .priceWrapper {
+          display: flex;
+          justify-content: end;
+          align-items: baseline;
+        }
+
+        .totalpriceWrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          align-items: end;
+        }
+
+        .paraTextItem {
+          margin-bottom: 10px !important;
+          @media(max-width: 400px) {
+            font-size: 14px !important;
+            line-height: 1.5 !important;
+          }
+        }
+      }
+
+      .prodlineSubCardWrapper {
+        border-radius: 10px;
+        // padding: 15px 10px;
+        background-color: #343434;
+
+        .subscrip_headpackage {
+          border-radius: 10px;
+
+          padding: 15px 10px;
+        }
+
+        .subscrip_package {
+          padding: 15px 10px;
+          border-radius: 0px 0px 10px 10px;
+
+          background-color: #fff;
+
+          ul {
+            margin: 0 10px;
+            margin-bottom: 10px;
+            li {
+              line-height: 2;
+            }
+          }
+        }
+
+        .packagewrappper {
+          padding-top: 10px;
+          min-height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .subscriptionLastItem {
+            // margin-bottom: 10px;
+          }
+        }
+
+        .customPackage {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .priceWrapper {
+          display: flex;
+          justify-content: end;
+          align-items: baseline;
+        }
+
+        .totalpriceWrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          align-items: end;
+        }
+
+        .paraTextItem {
+          margin-bottom: 10px !important;
+          @media(max-width: 400px) {
+            font-size: 14px !important;
+            line-height: 1.5 !important;
+          }
+        }
+      }
+
+      .menuHeading {
+        font-size: xx-large;
+        // padding: 15px 25px !important;
+        background-color: transparent;
+
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.btn-wrapper {
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .order {
+    order: 2; /* Set the order for mobile view */
+  }
+
+  .package {
+    order: 1; /* Set the order for mobile view */
+  }
+  .btn-wrapper {
+    text-align: center;
+  }
+}

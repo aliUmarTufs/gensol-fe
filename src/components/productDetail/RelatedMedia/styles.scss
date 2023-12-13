@@ -1,0 +1,98 @@
+.iscartRelateView {
+  @media (min-width: 900px) {
+    width: calc(100% - 425px);
+ 
+  }
+
+  @media (max-width: 900px) {
+    min-width: 100%;
+  }
+}
+
+.listingcardsDetailRows {
+  
+
+  
+  @media (min-width: 800px) {
+    .lgWidth {
+      display: none !important;
+      @media (min-width: 1400px) {
+        justify-content: center;
+        display: flex !important;
+      }
+    }
+    .mdWidth {
+      display: flex !important;
+      justify-content: center;
+
+      @media (min-width: 1400px) {
+        display: none !important;
+      }
+      @media (max-width: 1200px) {
+        display: none !important;
+      }
+      // @media (max-width: 1400px) {
+      //   display: none !important;
+      // }
+    }
+
+    .md1Width {
+      display: flex !important;
+      justify-content: center;
+
+      @media (min-width: 1200px) {
+        display: none !important;
+      }
+      @media (max-width: 980px) {
+        display: none !important;
+      }
+    }
+
+    .md2Width {
+      display: flex !important;
+      justify-content: center;
+
+      @media (min-width: 980px) {
+        display: none !important;
+      }
+      @media (max-width: 800px) {
+        display: none !important;
+      }
+    }
+    .md3Width {
+      display: flex !important;
+      justify-content: center;
+
+      @media (min-width: 800px) {
+        display: none !important;
+      }
+    }
+  }
+
+  @media (max-width: 799px) {
+    .md3Width {
+      display: flex !important;
+      justify-content: center;
+  
+      @media (min-width: 800px) {
+        display: none !important;
+      }
+    }
+    .md2Width {
+      display: none !important;
+    }
+    .md1Width {
+      display: none !important;
+
+    }
+    .mdWidth{
+      display: none !important;
+
+    }
+    .lgWidth{
+      display: none !important;
+
+  
+    }
+  }
+}

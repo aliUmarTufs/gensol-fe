@@ -1,0 +1,258 @@
+.black-box-btn-wrapper {
+  text-align: right;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+
+  .black-box-btn {
+    color: black;
+  }
+}
+
+.main-wrapper {
+  input[type='text'] {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    width: 100%;
+    min-height: 47px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 6px 20px;
+  }
+
+  .checkmark {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #343434;
+    background-color: #343434;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all 0.2s linear;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+  }
+
+  input[type='radio'] {
+    display: none;
+  }
+
+  input:checked + .checkmark {
+    background-color: #d9a94a;
+  }
+
+  .total-subtotal-wrapper {
+    border-radius: 13.5px;
+    background: rgb(0 0 0 / 50%);
+    padding: 15px 23px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    .total-subtotal-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .radio-wrapper {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    position: relative;
+    margin-top: 3px;
+
+    label {
+      color: #fff;
+      font-family: 'Montserrat';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .radio-input-wrapper {
+    .satisfy-course-content-wrapper {
+      margin: 10px 0 30px 23px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      .institution-wrapper {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+        .institution-heading {
+          font-weight: 600;
+        }
+      }
+
+      .satisfy-course-content-wrap {
+        display: flex;
+        flex-direction: column;
+        row-gap: 13px;
+
+        > p {
+          font-weight: 600;
+        }
+        .satisfy-course-content-radio-wrap {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+
+          > div {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+          }
+          .other-input {
+            width: 95%;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .satisfy-course-detail-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+    }
+
+    .satisfy-course-other-wrapper {
+      .satisfy-course-other-radio-wrap {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin: 10px 0 30px 23px;
+
+        > div {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 10px;
+        }
+        .other-input {
+          width: 100%;
+          margin-top: 10px;
+        }
+        .referral-heading {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .price-main-wrapper {
+    p {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    .price-wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      margin-bottom: 15px;
+
+      > img {
+        width: 78px;
+        height: 79px;
+        object-fit: cover;
+      }
+
+      .price-content-wrap {
+        > p {
+          font-weight: 600;
+        }
+        > h4 {
+          margin-top: 6px;
+          font-size: 20px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  .payment-method-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    .satisfy-course-content-wrap {
+      display: flex;
+      flex-direction: column;
+      row-gap: 13px;
+
+      > p {
+        font-weight: 600;
+      }
+      .satisfy-course-content-radio-wrap {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        > div {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 10px;
+        }
+        .other-input {
+          width: 95%;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .card-detail-wrapper {
+      > p {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+      .card-detail-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 1%;
+
+        .expiry,
+        .cvv {
+          width: 49.5%;
+
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

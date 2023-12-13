@@ -1,0 +1,36 @@
+.paragraph-parent {
+    p {
+        // font-size: 11px;
+        // line-height: 15px;
+        font-size: 14px;
+        line-height: 16.8px;
+        color: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .paragraph-parent {
+        p {
+            font-size: 13px;
+            line-height: 15.6px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .paragraph-parent {
+        p {
+            font-size: 14px;
+            line-height: 16.8px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .paragraph-parent {
+        p {
+            font-size: 14px;
+            line-height: 16.8px;
+        }
+    }
+}

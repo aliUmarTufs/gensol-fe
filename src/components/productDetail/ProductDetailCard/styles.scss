@@ -1,0 +1,59 @@
+.DetailCard-parent {
+    .background {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        width: 100%;
+        // background-image: url("../../../assets/productDetail/detail.png");
+
+        
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: flex-end;
+        
+        .details {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 14px;
+            background-color: #131416;
+            width: 40%;
+            @media (max-width: 600px) {
+                width: 100% !important;
+              }
+              .respDetailImage{
+                @media (min-width: 600px) {
+                  display: none;
+                } 
+              }
+            
+        }
+    }
+    .iscartViewDetail{
+                width: calc(100% - 425px) !important;
+                .details {
+                    margin: 20px;
+                    padding: 20px;
+                    border-radius: 14px;
+                    background-color: #131416;
+                    width: 70%;
+                    @media (max-width: 600px) {
+                        width: 100% !important;
+                      }
+                      .respDetailImage{
+                        @media (min-width: 600px) {
+                          display: none;
+                        } 
+                      }
+                    
+                }
+
+                @media (max-width: 980px) {
+                  width: 100% !important;
+                  
+                }
+    }
+    .iscartView{
+        // width: calc(100% - 425px) !important;
+      }
+}

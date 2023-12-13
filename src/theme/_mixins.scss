@@ -1,0 +1,39 @@
+@use "./breakPoints";
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{breakPoints.$screen-sm}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (max-width: #{breakPoints.$screen-md}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (max-width: #{breakPoints.$screen-lg}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (max-width: #{breakPoints.$screen-xl}) {
+        @content;
+    }
+}
+
+@mixin rwd($screen) {
+    @media (max-width: #{$screen}px) {
+        @content;
+    }
+}
+
+// @include mixins.rwd(768) {
+//     background-color: red !important;
+// }

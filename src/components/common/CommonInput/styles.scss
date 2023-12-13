@@ -1,0 +1,76 @@
+@use "../../../master.scss";
+
+.footer-field {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(252, 253, 255, 0.5);
+    border-radius: 0;
+    padding: 0;
+    input {
+        background-color: transparent;
+        color: #ffffff;
+        &::placeholder {
+            color: #ffffff;
+            opacity: 0.5;
+        }
+    }
+}
+
+.ant-input-affix-wrapper-disabled {
+    background: #ffffff;
+}
+
+.ant-input-affix-wrapper {
+    // background: master.$theme-color;
+    height: 40px;
+    // border-color: master.$dark-color;
+
+    input {
+        // background: master.$theme-color;
+        // color: #ffffff;
+        font-size: 14px;
+
+        &::placeholder {
+            color: #484848;
+            opacity: 0.5;
+        }
+    }
+    // .ant-input-suffix {
+    //     .svg-inline--fa {
+    //         path {
+    //             // color: master.$white-color;
+    //         }
+    //     }
+    // }
+}
+
+@media only screen and (max-width: 767px) {
+    .ant-input-affix-wrapper {
+        height: 35px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .ant-input-affix-wrapper {
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .ant-input-affix-wrapper {
+        font-size: 14px;
+        height: 45px;
+    }
+}
+
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus,
+// input:-webkit-autofill:active {
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: #ffffff;
+//     transition: background-color 5000s ease-in-out 0s;
+//     caret-color: #ffffff;
+// }

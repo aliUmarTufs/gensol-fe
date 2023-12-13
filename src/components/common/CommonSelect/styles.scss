@@ -1,0 +1,47 @@
+@use "../../../master.scss";
+
+.ant-select {
+    height: 40px;
+    width: 100%;
+    .ant-select-selector {
+        height: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        .ant-select-selection-placeholder {
+            color: #484848;
+            opacity: 0.5;
+        }
+    }
+    .ant-select-arrow {
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ant-select {
+        height: 35px;
+        .ant-select-selector {
+            font-size: 13px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .ant-select {
+        height: 40px;
+        .ant-select-selector {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .ant-select {
+        height: 45px;
+        .ant-select-selector {
+            font-size: 14px;
+        }
+    }
+}

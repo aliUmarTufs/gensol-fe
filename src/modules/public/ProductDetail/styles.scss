@@ -1,0 +1,5 @@
+@use "../../../master.scss";
+
+.productDetail-container {
+    @include master.common-padding(70px);
+}

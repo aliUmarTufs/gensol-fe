@@ -1,0 +1,40 @@
+.menuItem {
+  border: 2px solid #d9a94a;
+  border-radius: 12px;
+  width: 100%;
+  background-color: rgba(217, 169, 74, 0.1);
+  justify-content: center;
+}
+
+.filtersItems {
+  width: fit-content;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border: 2px solid #d9a94a;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  .iconWrapper {
+    width: 20px;
+    position: absolute;
+    right: -10px;
+    top: -11px;
+  }
+}
+
+.inputWrapper {
+  border: 2px solid #d9a94a;
+  height: 100%;
+  border-radius: 12px;
+  
+
+
+  ::placeholder {
+    color: #000;
+  }
+}
+.filtersItemsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}

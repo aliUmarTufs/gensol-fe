@@ -1,0 +1,36 @@
+.HeadingComponentWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .HeadingComponentWrap {
+    font-family: 'Bebas' !important;
+    color: #fff;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 90px;
+    text-transform: capitalize;
+    padding-bottom: 22px;
+    position: relative;
+    display: inline-block;
+
+    @media (max-width: 767px) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  .border {
+    height: 1px;
+    width: 342px;
+    background-color: #fff;
+    opacity: 0.2;
+    border: none;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}

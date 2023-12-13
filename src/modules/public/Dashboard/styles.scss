@@ -1,0 +1,13 @@
+@use "../../../master.scss";
+
+.dashborad-wrapper {
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: master.$grey-color;
+    @include master.common-padding(70px);
+
+    h2 {
+        transition: color 0.2s;
+    }
+}

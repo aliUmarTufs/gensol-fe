@@ -1,0 +1,62 @@
+/* Default button styles */
+
+@use "../../../master.scss";
+
+button.ant-btn {
+    font-size: 12px;
+    height: 40px;
+    width: 100%;
+    min-width: 100px;
+    border-radius: 12px;
+    color: master.$theme2-color;
+
+    &:hover {
+        color: master.$theme2-color !important;
+    }
+}
+
+.border {
+    border: 1px solid master.$theme-color;
+}
+
+// .ant-btn-loading-icon {
+//     position: absolute;
+//     left: 32%;
+//     top: 35%;
+// }
+
+.icon-but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 767px) {
+    button.ant-btn {
+        font-size: 10px;
+        height: 35px;
+    }
+}
+
+/* Media query for medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    button.ant-btn {
+        font-size: 12px;
+        height: 40px;
+    }
+}
+
+/* Media query for large screens */
+@media only screen and (min-width: 992px) {
+    button.ant-btn {
+        font-size: 14px;
+        height: 45px;
+    }
+}
+
+:where(.css-dev-only-do-not-override-pfkssg).ant-btn-primary:disabled {
+    color: master.$theme2-color;
+    background-color: master.$theme-color;
+    opacity: 0.5;
+}

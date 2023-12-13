@@ -1,0 +1,22 @@
+@use "../../master.scss";
+@use "../../theme/mixins.scss";
+
+.auth-wrapper {
+    background-color: master.$theme2-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .auth-content {
+        border: 15px solid master.$light-grey-color;
+        max-width: 900px;
+        margin: 30px;
+        width: 50%;
+        background-color: master.$grey-color;
+        border-radius: 30px;
+        padding: 30px;
+        @include mixins.md {
+            width: 100%;
+        }
+    }
+}

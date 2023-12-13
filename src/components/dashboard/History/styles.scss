@@ -1,0 +1,33 @@
+@use "../../../master.scss";
+
+.no-data{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-wrapper {
+    background-color: master.$light-grey-color;
+    padding: 10px;
+    border-radius: 20px;
+
+    .search-content {
+        .ant-form-item {
+            margin: 0 !important;
+        }
+    }
+
+    .history-search {
+        background-color: transparent;
+        border-color: master.$theme-color;
+        input {
+            background-color: transparent;
+            color: #ffff;
+            &::placeholder {
+                color: #979797;
+                opacity: 0.5;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.skeletonParent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .skeleton {
+        max-width: 400px;
+    }
+}

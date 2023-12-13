@@ -1,0 +1,32 @@
+@use "../../../master.scss";
+@use "../../../theme/mixins";
+
+.common-modal {
+    min-width: 250px !important;
+    width: 60% !important;
+
+    .ant-modal-content {
+        padding: 0 !important;
+        background: master.$grey-color;
+        border: 15px solid master.$light-grey-color;
+        // background-color: master.$dark-color;
+
+        .ant-modal-close {
+            background-color: master.$theme-color;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            .ant-modal-close-x {
+                color: master.$grey-color;
+                // font-size: 10px;
+            }
+        }
+        .ant-modal-body {
+            padding: 40px 20px 30px 20px;
+        }
+    }
+
+    @include mixins.sm {
+        width: 100% !important;
+    }
+}
